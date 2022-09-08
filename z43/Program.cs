@@ -1,7 +1,7 @@
 ﻿// Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, 
 // заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
-
+Console.WriteLine("Даны прямые y = k1*x+b1, y = k2x+b2");
 Console.WriteLine("Введите b1 - ");
 bool isNumb1 = double.TryParse(Console.ReadLine(), out double b1);
 if(isNumb1 == false)
@@ -54,5 +54,5 @@ double GetTochkaY(double b1, double k1, double b2, double k2)
       return Y;
 }
 GetTochkaY(b1, k1, b2, k2);
-Console.WriteLine($"Координаты точки пересечения({GetTochkaX(b1, k1, b2, k2)};{GetTochkaY(b1, k1, b2, k2)})");
+Console.WriteLine($"Координаты точки пересечения ({GetTochkaX(b1, k1, b2, k2)};{GetTochkaY(b1, k1, b2, k2)}) ");
 
